@@ -1,0 +1,11 @@
+l=list(map(int,input().split()))
+s=int(input())
+f=0
+for i in range(0,len(l)):
+    if(l[i]==s):
+        f=1
+        break
+if(f==0):
+    print("not found")
+else:
+    print("found")
