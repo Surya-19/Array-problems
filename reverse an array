@@ -1,0 +1,6 @@
+l=list(map(int,input().split()))
+a,b=0,len(l)-1
+while(a<b):
+    l[a],l[b]=l[b],l[a]
+    a+=1;b-=1
+print(*l)
