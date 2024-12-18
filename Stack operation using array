@@ -1,0 +1,26 @@
+class Stack:
+    m=10
+    s=[0]*m
+    top=-1
+def push(s1,data):
+    if(s1.top>=s1.m):
+        print("Overflow")
+    else:
+        s1.top+=1
+        s1.s[s1.top]=data
+def pop():
+    if(s1.top<0):
+        return "underflow"
+    t=s1.s[s1.top]
+    s1.top-=1
+    return t
+def empty():
+    if(s1.top==-1 or s1.top<=0):
+        return True
+    return False
+    
+s1=Stack()
+push(s1,10);push(s1,20);push(s1,30);push(s1,40)
+pop()
+print(s1.s[s1.top])
+print(empty())
